@@ -5,8 +5,8 @@
 
 makeCacheMatrix <- function(x = numeric()) {   
   Invers <- NULL  # sets the value of Invers to NULL 
-  set <- function(y) { #set the value of the matrix
-    x <<- y
+  set <- function(Invers) { #set the value of the matrix
+    x <<- Invers
     Invers <<- NULL
   }
   get <- function() x
@@ -87,4 +87,3 @@ cacheSolve <- function(x, ...) {
 ##[1,]   -5  2.0714286  1.2857143
 ##[2,]    2 -1.0714286 -0.2857143
 ##[3,]    0  0.2142857 -0.1428571
-
